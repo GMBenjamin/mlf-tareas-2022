@@ -17,7 +17,22 @@ def move_robot_to_xyz(robot, x, y, z):
 
 
 ## Mover el robot (acá va tu código)
-move_robot_to_xyz(r, x=200, y=0, z=230)
+def cuadrado(l):
+    assert type(l)==int and l>0 and l<100
+    move_robot_to_xyz(robot, 100, 50, 80)
+    time.sleep(0.6)
+    move_robot_to_xyz(robot, 100, 50, 50)
+    time.sleep(0.6)
+    move_robot_to_xyz(robot, 100+l, 50, 50)
+    time.sleep(0.6)
+    move_robot_to_xyz(robot, 100+l, 50+l, 50)
+    time.sleep(0.6)
+    move_robot_to_xyz(robot, 100, 50+l, 50)
+    time.sleep(0.6)
+    move_robot_to_xyz(robot, 100, 50, 50)
+    time.sleep(0.6)
+    move_robot_to_xyz(robot, 100, 50, 80)
+    time.sleep(0.6)
 
 
 
